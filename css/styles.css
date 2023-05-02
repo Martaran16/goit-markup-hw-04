@@ -395,7 +395,7 @@ img {
   padding-bottom: 120px;
   margin: auto;
 }
-.compani > .section-title {
+.companis-title {
   line-height: 1.1;
 }
 
@@ -423,7 +423,7 @@ img {
 .partner:hover,
 .partner:focus {
   border-color: var(--active-button-color);
-  color: #404bbf var(--active-button-color);
+  color: var(--active-button-color);
 }
 
 .compani-link {
@@ -442,7 +442,6 @@ img {
 .over-footer {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
   gap: 120px;
 }
 
@@ -466,7 +465,14 @@ img {
   color: var(--design-element);
 }
 
-.footer-title {
+.footer-subtitle {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+  color: var(--background-style-color);
 }
 
 .box-text {
