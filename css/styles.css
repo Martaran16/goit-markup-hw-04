@@ -124,6 +124,8 @@ img {
 
 .header {
   border-bottom: 1px solid var(--border-box);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -201,6 +203,9 @@ img {
 /* hero */
 
 .hero {
+  max-height: 600;
+  max-width: 1440px;
+  margin: auto;
   padding: 188px 0;
 
   background-color: var(--title-text-color);
@@ -211,8 +216,7 @@ img {
     url(../images/bac-people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
-  background-size: 1440px 600px;
+  background-size: cover;
 }
 
 .hero-subject {
@@ -282,6 +286,7 @@ img {
 
   background: var(--design-element);
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .social-icon {
@@ -335,7 +340,8 @@ img {
 .information-list {
   display: flex;
   flex-direction: column;
-  padding: 32px 16px;
+
+  padding: 32px 0;
 }
 .information-list > h3,
 .information-list > p {
@@ -357,12 +363,21 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
+}
 
+.link-content-icon-people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-button-color);
   border-radius: 50%;
 }
-.link-icon-teacher:hover,
-.link-icon-teacher:focus {
+
+.link-content-icon-people:hover,
+.link-content-icon-people:focus {
   background-color: var(--social-link-active);
   border-radius: 50%;
 }
@@ -380,6 +395,10 @@ img {
   padding-bottom: 120px;
   margin: auto;
 }
+.compani > .section-title {
+  line-height: 1.1;
+}
+
 .compani-lists {
   display: flex;
 
@@ -390,28 +409,27 @@ img {
   gap: 24px;
 }
 
-.img-link-compani > a {
+.partner {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
-
   border-radius: 4px;
-}
-.compani-link {
-  fill: #8e8f99;
-}
-.compani-link:hover,
-.compani-link:focus,
-.img-link-compani:hover,
-.img-link-compani:focus {
-  border: 1px solid #404bbf;
-  fill: #404bbf;
+  color: var(--icon-color);
 }
 
-/* #404BBF */
+.partner:hover,
+.partner:focus {
+  border-color: var(--active-button-color);
+  color: #404bbf var(--active-button-color);
+}
+
+.compani-link {
+  fill: currentColor;
+}
+
 /* footer     */
 .futer {
   display: flex;
@@ -560,8 +578,8 @@ img {
   margin-bottom: 0;
 }
 
-.img-info:hover,
-.img-info:focus {
+.img-portfolio_link:hover,
+.img-portfolio_link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
